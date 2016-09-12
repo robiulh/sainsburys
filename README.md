@@ -15,6 +15,16 @@ the url provided is the argument that is needed to gather the information
 
 the final result should be json that is outputted to the system console.
 
+Dependencies needed
+-------------------
+
+I have added the following dependencies to the pom.xml
+
+jackson-databind - Used to create json from the pojo
+
+htmlunit - This is used as a means of using a headless browser and allows to query the html document with xpath.
+
+
 
 
 
