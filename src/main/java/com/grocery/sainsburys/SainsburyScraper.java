@@ -20,6 +20,12 @@ public class SainsburyScraper {
     public static void main(String args[]){
 
         try {
+            
+            if(args.length == 0){
+                System.out.println("[ERROR]: No URL specified");
+                System.exit(-1);
+            }
+            
             String searchUrl = args[0];
             DocumentContent documentContent = new DocumentContent();
             JsonOutput listOfItems = new JsonOutput();
